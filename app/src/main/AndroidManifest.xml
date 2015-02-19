@@ -17,16 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SubmitActivity"
-            android:label="@string/title_activity_submit"
+            android:name=".SurveyActivity"
+            android:label="@string/title_activity_survey"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.usfirst.frc.team4131.scoutingapp.MainActivity" />
         </activity>
         <activity
-            android:name=".SurveyActivity"
-            android:label="@string/title_activity_survey"
+            android:name=".SubmitActivity"
+            android:label="@string/title_activity_submit"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

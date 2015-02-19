@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">ScoutingApp</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="field">Field</string>
+    <string name="submit">Submit</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_submit">Values Submitted</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

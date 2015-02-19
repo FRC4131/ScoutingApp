@@ -5,22 +5,19 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
-    public static final String MESSAGE = "org.usfirst.frc.team4131.scoutingapp.MESSAGE";
+public class SubmitActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MainActivity.MESSAGE);
+        TextView field = new TextView(this);
+        field.setTextSize(40);
+        field.setText(message);
+        setContentView(field);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -28,19 +25,10 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
-    }
-    public void submit(View view){
-        Intent intent = new Intent(this, SubmitActivity.class);
-        EditText field = (EditText) findViewById(R.id.field);
-        String text = field.getText().toString();
-        intent.putExtra(MESSAGE, text);
-        startActivity(intent);
     }
 }

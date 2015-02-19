@@ -6,22 +6,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.EditText;
 
-public class SubmitActivity extends ActionBarActivity {
+public class SurveyActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intent = getIntent();
-        int number = Integer.valueOf(intent.getStringExtra(MainActivity.TEAM_NUMBER));
-        String teamName = intent.getStringExtra(MainActivity.TEAM_NAME);
-        String robotName = intent.getStringExtra(MainActivity.ROBOT_NAME);
-        String text = "Team " + number + " (" + teamName + ")";
-        if(robotName!=null && robotName.length()>0) text = text.concat(": " + robotName);
-        TextView view = new TextView(this);
-        view.setTextSize(30);
-        view.setText(text);
-        setContentView(view);
+        setContentView(R.layout.activity_survey);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -29,13 +20,19 @@ public class SubmitActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
-    public void goHome(View view){
-        startActivity(new Intent(this, MainActivity.class));
+    public void submit(View view){
+        Intent intent = new Intent(this, SubmitActivity.class);
+        intent.putExtra(MainActivity.TEAM_NUMBER, ((EditText)findViewById(R.id.team_number)).getText().toString());
+        intent.putExtra(MainActivity.TEAM_NAME, ((EditText)findViewById(R.id.team_name)).getText().toString());
+        intent.putExtra(MainActivity.ROBOT_NAME, ((EditText)findViewById(R.id.robot_name)).getText().toString());
+        startActivity(intent);
     }
 }

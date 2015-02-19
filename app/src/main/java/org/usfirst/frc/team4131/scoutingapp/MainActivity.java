@@ -8,9 +8,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-
 public class MainActivity extends ActionBarActivity {
-    public static final String MESSAGE = "org.usfirst.frc.team4131.scoutingapp.MESSAGE";
+    public static final String TEAM_NUMBER = "org.usfirst.frc.team4131.scoutingapp.TEAM_NUMBER";
+    public static final String TEAM_NAME = "org.usfirst.frc.team4131.scoutingapp.TEAM_NAME";
+    public static final String ROBOT_NAME = "org.usfirst.frc.team4131.scoutingapp.ROBOT_NAME";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +37,7 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void submit(View view){
-        Intent intent = new Intent(this, SubmitActivity.class);
-        EditText field = (EditText) findViewById(R.id.field);
-        String text = field.getText().toString();
-        intent.putExtra(MESSAGE, text);
-        startActivity(intent);
+    public void startSurvey(View view){
+        startActivity(new Intent(this, SurveyActivity.class));
     }
 }

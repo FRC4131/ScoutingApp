@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">FRC 4131: Scouting App</string>
     <string name="action_settings">Settings</string>
     <string name="start_survey">Start a Survey</string>
-
+    <string name="start_review">View Collected Data</string>
     <string name="title_activity_survey">Survey</string>
     <string name="team_number">Team Number</string>
     <string name="team_name">Team Name</string>
     <string name="robot_name">Robot Name (leave blank if nameless)</string>
     <string name="submit">Submit Survey</string>
-
     <string name="title_activity_submit">Survey Submitted</string>
     <string name="submitted">Thank you for taking our survey!</string>
     <string name="restart">Return to Main Page</string>
+    <string name="title_activity_review">Survey Review</string>
+    <string name="back">Back</string>
+    <string name="title_activity_team_review">Survey Review</string>
 </resources>

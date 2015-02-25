@@ -27,9 +27,6 @@ public class SubmitActivity extends ActionBarActivity {
         }
         String teamName = intent.getStringExtra(MainActivity.TEAM_NAME);
         String robotName = intent.getStringExtra(MainActivity.ROBOT_NAME);
-        String text = "Team " + teamNumber + " (" + teamName + ")";
-        if(robotName!=null && robotName.length()>0) text = text.concat(": " + robotName);
-        Log.w("Collected survey data", text);
         FileOutputStream out = null;
         try{
             out = openFileOutput(teamNumber+".survey", Context.MODE_PRIVATE);
@@ -37,8 +34,8 @@ public class SubmitActivity extends ActionBarActivity {
             out.write(robotName.concat("\r\n").getBytes());
         }catch(IOException ex){
             Log.e("Writing survey results", "Error while writing file", ex);
-        }finally{
-            if(out!=null) try{
+        }finally {
+            if(out != null) try{
                 out.close();
             }catch(IOException ex){Log.e("Writing survey results", "Error while closing file", ex);}
         }
@@ -58,7 +55,7 @@ public class SubmitActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void restart(View view){
-        startActivity(new Intent(this, MainActivity.class));
+    public void restart(View view) {
+       startActivity(new Intent(this, MainActivity.class));
     }
 }

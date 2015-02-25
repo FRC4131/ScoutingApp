@@ -8,7 +8,7 @@
     <string name="title_activity_survey">Survey</string>
     <string name="team_number">Team Number</string>
     <string name="team_name">Team Name</string>
-    <string name="robot_name">Robot Name (leave blank if nameless)</string>
+    <string name="robot_name">Robot Name</string>
     <string name="submit">Submit Survey</string>
     <string name="title_activity_submit">Survey Submitted</string>
     <string name="submitted">Thank you for taking our survey!</string>

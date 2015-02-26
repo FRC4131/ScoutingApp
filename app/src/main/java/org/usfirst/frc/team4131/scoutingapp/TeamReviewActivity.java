@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 
@@ -15,20 +16,9 @@ public class TeamReviewActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         setContentView(R.layout.activity_team_review);
-        TextView teamNumber = (TextView)findViewById(R.id.team_number);
-        teamNumber.setText(intent.getStringExtra(MainActivity.TEAM_NUMBER));
-        TextView teamName = (TextView)findViewById(R.id.team_name);
-        teamName.setText(intent.getStringExtra(MainActivity.TEAM_NAME));
-        TextView robotName = (TextView)findViewById(R.id.robot_name);
-        robotName.setText(intent.getStringExtra(MainActivity.ROBOT_NAME));
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_team_review, menu);
-        return true;
+        ((TextView)findViewById(R.id.team_number)).setText(intent.getStringExtra(MainActivity.TEAM_NUMBER));
+        ((TextView)findViewById(R.id.team_name)).setText(intent.getStringExtra(MainActivity.TEAM_NAME));
+        ((TextView)findViewById(R.id.robot_name)).setText(intent.getStringExtra(MainActivity.ROBOT_NAME));
     }
 
     @Override
@@ -42,7 +32,7 @@ public class TeamReviewActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
+    public void back(View view){startActivity(new Intent(this, ReviewActivity.class));}
 }

@@ -39,6 +39,7 @@ public class SubmitActivity extends ActionBarActivity {
             out.write(intent.getStringExtra(MainActivity.UPSIDE_DOWN).concat("\r\n").getBytes());
             out.write(intent.getStringExtra(MainActivity.RECYCLE_IN).concat("\r\n").getBytes());
             out.write(intent.getStringExtra(MainActivity.RECYCLE_EX).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.EXTRA).concat("\r\n").getBytes());
         }catch(IOException ex){
             Log.e("Writing survey results", "Error while writing file", ex);
         }finally {

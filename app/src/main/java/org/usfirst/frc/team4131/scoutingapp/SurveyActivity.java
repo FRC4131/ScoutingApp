@@ -42,6 +42,7 @@ public class SurveyActivity extends ActionBarActivity {
         intent.putExtra(MainActivity.UPSIDE_DOWN, ((EditText)findViewById(R.id.upside_down)).getText().toString());
         intent.putExtra(MainActivity.RECYCLE_IN, ((EditText)findViewById(R.id.recycle_in)).getText().toString());
         intent.putExtra(MainActivity.RECYCLE_EX, ((EditText)findViewById(R.id.recycle_ex)).getText().toString());
+        intent.putExtra(MainActivity.EXTRA, ((EditText)findViewById(R.id.extra)).getText().toString());
         startActivity(intent);
     }
 }

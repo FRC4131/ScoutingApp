@@ -27,6 +27,7 @@ public class TeamReviewActivity extends ActionBarActivity {
         ((TextView)findViewById(R.id.upside_down)).setText(intent.getStringExtra(MainActivity.UPSIDE_DOWN));
         ((TextView)findViewById(R.id.recycle_in)).setText(intent.getStringExtra(MainActivity.RECYCLE_IN));
         ((TextView)findViewById(R.id.recycle_ex)).setText(intent.getStringExtra(MainActivity.RECYCLE_EX));
+        ((TextView)findViewById(R.id.extra)).setText(intent.getStringExtra(MainActivity.EXTRA));
     }
 
     @Override

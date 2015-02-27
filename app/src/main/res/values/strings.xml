@@ -25,7 +25,8 @@
     <string name="recycle_ex_hint">Can you put a bin on a preassembled stack?</string>
     <string name="recycle_in">Recycle Bins (Internal):</string>
     <string name="recycle_in_hint">Can you put a bin on a stack you are holding?</string>
-
+    <string name="extra">Misc. Info:</string>
+    <string name="extra_hint">Anything else we should know about your robot?</string>
     <string name="submit">Submit Survey</string>
     <string name="title_activity_submit">Survey Submitted</string>
     <string name="submitted">Thank you for taking our survey!</string>

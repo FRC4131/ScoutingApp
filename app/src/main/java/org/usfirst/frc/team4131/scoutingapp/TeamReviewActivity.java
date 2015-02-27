@@ -19,6 +19,14 @@ public class TeamReviewActivity extends ActionBarActivity {
         ((TextView)findViewById(R.id.team_number)).setText(intent.getStringExtra(MainActivity.TEAM_NUMBER));
         ((TextView)findViewById(R.id.team_name)).setText(intent.getStringExtra(MainActivity.TEAM_NAME));
         ((TextView)findViewById(R.id.robot_name)).setText(intent.getStringExtra(MainActivity.ROBOT_NAME));
+        ((TextView)findViewById(R.id.tote_in)).setText(intent.getStringExtra(MainActivity.TOTE_IN));
+        ((TextView)findViewById(R.id.tote_out)).setText(intent.getStringExtra(MainActivity.TOTE_OUT));
+        ((TextView)findViewById(R.id.approach)).setText(intent.getStringExtra(MainActivity.APPROACH));
+        ((TextView)findViewById(R.id.coopertition)).setText(intent.getStringExtra(MainActivity.COOPERTITION));
+        ((TextView)findViewById(R.id.autonomous)).setText(intent.getStringExtra(MainActivity.AUTONOMOUS));
+        ((TextView)findViewById(R.id.upside_down)).setText(intent.getStringExtra(MainActivity.UPSIDE_DOWN));
+        ((TextView)findViewById(R.id.recycle_in)).setText(intent.getStringExtra(MainActivity.RECYCLE_IN));
+        ((TextView)findViewById(R.id.recycle_ex)).setText(intent.getStringExtra(MainActivity.RECYCLE_EX));
     }
 
     @Override

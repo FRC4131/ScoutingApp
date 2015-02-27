@@ -33,6 +33,15 @@ public class SurveyActivity extends ActionBarActivity {
         intent.putExtra(MainActivity.TEAM_NUMBER, ((EditText)findViewById(R.id.team_number)).getText().toString());
         intent.putExtra(MainActivity.TEAM_NAME, ((EditText)findViewById(R.id.team_name)).getText().toString());
         intent.putExtra(MainActivity.ROBOT_NAME, ((EditText)findViewById(R.id.robot_name)).getText().toString());
+        intent.putExtra(MainActivity.TOTE_IN, ((EditText)findViewById(R.id.tote_in)).getText().toString());
+        intent.putExtra(MainActivity.TOTE_OUT, ((EditText)findViewById(R.id.tote_out)).getText().toString());
+        intent.putExtra(MainActivity.APPROACH, ((EditText)findViewById(R.id.approach)).getText().toString());
+        intent.putExtra(MainActivity.TRANSPORT, ((EditText)findViewById(R.id.transport)).getText().toString());
+        intent.putExtra(MainActivity.COOPERTITION, ((EditText)findViewById(R.id.coopertition)).getText().toString());
+        intent.putExtra(MainActivity.AUTONOMOUS, ((EditText)findViewById(R.id.autonomous)).getText().toString());
+        intent.putExtra(MainActivity.UPSIDE_DOWN, ((EditText)findViewById(R.id.upside_down)).getText().toString());
+        intent.putExtra(MainActivity.RECYCLE_IN, ((EditText)findViewById(R.id.recycle_in)).getText().toString());
+        intent.putExtra(MainActivity.RECYCLE_EX, ((EditText)findViewById(R.id.recycle_ex)).getText().toString());
         startActivity(intent);
     }
 }

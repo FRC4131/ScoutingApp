@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">FRC 4131: Scouting App</string>
     <string name="action_settings">Settings</string>
     <string name="start_survey">Start a Survey</string>
     <string name="start_review">View Collected Data</string>
     <string name="title_activity_survey">Survey</string>
-    <string name="team_number">Team Number: </string>
-    <string name="team_name">Team Name: </string>
-    <string name="robot_name">Robot Name: </string>
+    <string name="team_number">Team Number:</string>
+    <string name="team_name">Team Name:</string>
+    <string name="robot_name">Robot Name:</string>
+    <string name="robot_name_hint">Leave blank if nameless</string>
+    <string name="tote_in">Tote Intake:</string>
+    <string name="tote_out">Tote Output:</string>
+    <string name="approach">Approach Orientation:</string>
+    <string name="approach_hint">Do you collect from the long or short side?</string>
+    <string name="transport">Tote Transportation:</string>
+    <string name="transport_hint">Can you reliably carry a tote stack accross the field? How tall?</string>
+    <string name="coopertition">Coopertition:</string>
+    <string name="coopertition_hint">Can you do the coopertition challenge?</string>
+    <string name="autonomous">Autonomous:</string>
+    <string name="autonomous_hint">What are your autonomous capabilities?</string>
+    <string name="upside_down">Upside-Down Totes:</string>
+    <string name="upside_down_hint">Can you collect them?</string>
+    <string name="recycle_ex">Recycle Bins (External):</string>
+    <string name="recycle_ex_hint">Can you put a bin on a preassembled stack?</string>
+    <string name="recycle_in">Recycle Bins (Internal):</string>
+    <string name="recycle_in_hint">Can you put a bin on a stack you are holding?</string>
+
     <string name="submit">Submit Survey</string>
     <string name="title_activity_submit">Survey Submitted</string>
     <string name="submitted">Thank you for taking our survey!</string>

@@ -25,13 +25,20 @@ public class SubmitActivity extends ActionBarActivity {
         }catch(NullPointerException ex){
             Log.e("SURVEY", "Null intent", ex);
         }
-        String teamName = intent.getStringExtra(MainActivity.TEAM_NAME);
-        String robotName = intent.getStringExtra(MainActivity.ROBOT_NAME);
         FileOutputStream out = null;
         try{
             out = openFileOutput(teamNumber+".survey", Context.MODE_PRIVATE);
-            out.write(teamName.concat("\r\n").getBytes());
-            out.write(robotName.concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.TEAM_NAME).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.ROBOT_NAME).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.TOTE_IN).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.TOTE_OUT).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.APPROACH).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.TRANSPORT).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.COOPERTITION).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.AUTONOMOUS).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.UPSIDE_DOWN).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.RECYCLE_IN).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.RECYCLE_EX).concat("\r\n").getBytes());
         }catch(IOException ex){
             Log.e("Writing survey results", "Error while writing file", ex);
         }finally {

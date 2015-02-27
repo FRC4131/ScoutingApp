@@ -8,9 +8,18 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
-    public static final String TEAM_NUMBER = "org.usfirst.frc.team4131.scoutingapp.TEAM_NUMBER";
-    public static final String TEAM_NAME = "org.usfirst.frc.team4131.scoutingapp.TEAM_NAME";
-    public static final String ROBOT_NAME = "org.usfirst.frc.team4131.scoutingapp.ROBOT_NAME";
+    public static final String TEAM_NUMBER = "org.usfirst.frc.team4131.scoutingapp.TEAM_NUMBER",
+            TEAM_NAME = "org.usfirst.frc.team4131.scoutingapp.TEAM_NAME",
+            ROBOT_NAME = "org.usfirst.frc.team4131.scoutingapp.ROBOT_NAME",
+            TOTE_IN = "org.usfirst.team4131.scoutingapp.TOTE_IN",
+            TOTE_OUT = "org.usfirst.team4131.scoutingapp.TOTE_OUT",
+            APPROACH = "org.usfirst.team4131.scoutingapp.APPROACH",
+            TRANSPORT = "org.usfirst.team4131.scoutingapp.TRANSPORT",
+            COOPERTITION = "org.usfirst.team4131.scoutingapp.COOPERTITION",
+            AUTONOMOUS = "org.usfirst.team4131.scoutingapp.AUTONOMOUS",
+            UPSIDE_DOWN = "org.usfirst.team4131.scoutingapp.UPSIDE_DOWN",
+            RECYCLE_IN = "org.usfirst.team4131.scoutingapp.RECYCLE_IN",
+            RECYCLE_EX = "org.usfirst.team4131.scoutingapp.RECYCLE_EX";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

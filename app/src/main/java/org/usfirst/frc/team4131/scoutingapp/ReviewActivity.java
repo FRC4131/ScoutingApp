@@ -35,6 +35,14 @@ public class ReviewActivity extends ActionBarActivity {
                         in = new BufferedReader(new InputStreamReader(openFileInput(teamNumber + ".survey")));
                         intent.putExtra(MainActivity.TEAM_NAME, in.readLine());
                         intent.putExtra(MainActivity.ROBOT_NAME, in.readLine());
+                        intent.putExtra(MainActivity.TOTE_IN, in.readLine());
+                        intent.putExtra(MainActivity.TOTE_OUT, in.readLine());
+                        intent.putExtra(MainActivity.APPROACH, in.readLine());
+                        intent.putExtra(MainActivity.COOPERTITION, in.readLine());
+                        intent.putExtra(MainActivity.AUTONOMOUS, in.readLine());
+                        intent.putExtra(MainActivity.UPSIDE_DOWN, in.readLine());
+                        intent.putExtra(MainActivity.RECYCLE_IN, in.readLine());
+                        intent.putExtra(MainActivity.RECYCLE_EX, in.readLine());
                     }catch(IOException ex){
                         Log.e("Survey review", "Error while reading file " + teamNumber + ".survey", ex);
                     }finally{

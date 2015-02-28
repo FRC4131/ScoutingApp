@@ -37,6 +37,7 @@ public class SurveyActivity extends ActionBarActivity {
         intent.putExtra(MainActivity.TOTE_OUT, ((EditText)findViewById(R.id.tote_out)).getText().toString());
         intent.putExtra(MainActivity.APPROACH, ((EditText)findViewById(R.id.approach)).getText().toString());
         intent.putExtra(MainActivity.TRANSPORT, ((EditText)findViewById(R.id.transport)).getText().toString());
+        intent.putExtra(MainActivity.STACK, ((EditText)findViewById(R.id.stack)).getText().toString());
         intent.putExtra(MainActivity.COOPERTITION, ((EditText)findViewById(R.id.coopertition)).getText().toString());
         intent.putExtra(MainActivity.AUTONOMOUS, ((EditText)findViewById(R.id.autonomous)).getText().toString());
         intent.putExtra(MainActivity.UPSIDE_DOWN, ((EditText)findViewById(R.id.upside_down)).getText().toString());

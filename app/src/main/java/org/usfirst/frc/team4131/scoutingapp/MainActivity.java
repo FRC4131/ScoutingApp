@@ -15,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
             TOTE_OUT = "org.usfirst.frc.team4131.scoutingapp.TOTE_OUT",
             APPROACH = "org.usfirst.frc.team4131.scoutingapp.APPROACH",
             TRANSPORT = "org.usfirst.frc.team4131.scoutingapp.TRANSPORT",
+            STACK = "org.usfirst.frc.team4131.scoutingapp.STACK",
             COOPERTITION = "org.usfirst.frc.team4131.scoutingapp.COOPERTITION",
             AUTONOMOUS = "org.usfirst.frc.team4131.scoutingapp.AUTONOMOUS",
             UPSIDE_DOWN = "org.usfirst.frc.team4131.scoutingapp.UPSIDE_DOWN",

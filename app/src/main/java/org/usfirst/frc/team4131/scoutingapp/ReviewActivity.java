@@ -41,6 +41,8 @@ public class ReviewActivity extends ActionBarActivity {
                         intent.putExtra(MainActivity.TOTE_IN, in.readLine());
                         intent.putExtra(MainActivity.TOTE_OUT, in.readLine());
                         intent.putExtra(MainActivity.APPROACH, in.readLine());
+                        intent.putExtra(MainActivity.TRANSPORT, in.readLine());
+                        intent.putExtra(MainActivity.STACK, in.readLine());
                         intent.putExtra(MainActivity.COOPERTITION, in.readLine());
                         intent.putExtra(MainActivity.AUTONOMOUS, in.readLine());
                         intent.putExtra(MainActivity.UPSIDE_DOWN, in.readLine());

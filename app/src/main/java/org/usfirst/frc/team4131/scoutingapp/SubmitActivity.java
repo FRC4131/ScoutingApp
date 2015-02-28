@@ -34,6 +34,7 @@ public class SubmitActivity extends ActionBarActivity {
             out.write(intent.getStringExtra(MainActivity.TOTE_OUT).concat("\r\n").getBytes());
             out.write(intent.getStringExtra(MainActivity.APPROACH).concat("\r\n").getBytes());
             out.write(intent.getStringExtra(MainActivity.TRANSPORT).concat("\r\n").getBytes());
+            out.write(intent.getStringExtra(MainActivity.STACK).concat("\r\n").getBytes());
             out.write(intent.getStringExtra(MainActivity.COOPERTITION).concat("\r\n").getBytes());
             out.write(intent.getStringExtra(MainActivity.AUTONOMOUS).concat("\r\n").getBytes());
             out.write(intent.getStringExtra(MainActivity.UPSIDE_DOWN).concat("\r\n").getBytes());

@@ -22,6 +22,8 @@ public class TeamReviewActivity extends ActionBarActivity {
         ((TextView)findViewById(R.id.tote_in)).setText(intent.getStringExtra(MainActivity.TOTE_IN));
         ((TextView)findViewById(R.id.tote_out)).setText(intent.getStringExtra(MainActivity.TOTE_OUT));
         ((TextView)findViewById(R.id.approach)).setText(intent.getStringExtra(MainActivity.APPROACH));
+        ((TextView)findViewById(R.id.transport)).setText(intent.getStringExtra(MainActivity.TRANSPORT));
+        ((TextView)findViewById(R.id.stack)).setText(intent.getStringExtra(MainActivity.STACK));
         ((TextView)findViewById(R.id.coopertition)).setText(intent.getStringExtra(MainActivity.COOPERTITION));
         ((TextView)findViewById(R.id.autonomous)).setText(intent.getStringExtra(MainActivity.AUTONOMOUS));
         ((TextView)findViewById(R.id.upside_down)).setText(intent.getStringExtra(MainActivity.UPSIDE_DOWN));
